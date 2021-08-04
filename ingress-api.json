@@ -243,8 +243,8 @@
                         {
                             "path": "/",
                             "method": "GET",
-                            "match_pattern": "\\/(...+)",
-                            "rewrite_to": "",
+                            "match_pattern": "/httpbin-ingress/(...+)",
+                            "rewrite_to": "tyk://fddf125fc62d4cbd703895ce1e1a7078/$1",
                             "triggers": [
                                 {
                                     "on": "all",
@@ -292,8 +292,8 @@
                         {
                             "path": "/",
                             "method": "GET",
-                            "match_pattern": "\\/(...+)",
-                            "rewrite_to": "",
+                            "match_pattern": "/httpbin-ingress/(...+)",
+                            "rewrite_to": "tyk://fddf125fc62d4cbd703895ce1e1a7078/$1",
                             "triggers": [
                                 {
                                     "on": "all",
